@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    background-color: #3029D9
+}
+
+.header__nav {
+    
+    display: none;
+    position: absolute;
+    top: 35%;
+    left: 27%;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.header__active {
+    background-color: #111849;
+    min-height: 117vh;
+    display: flex;
+    align-items: start;
+    transition: all 0.5s ease;
+}
+
+.header__active a {
+    color: white;
+}
+.header__active i {
+    color: white;
+}
+
+
+.nav__ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;    
+}
+
+.nav__active {
+    display: block;
+}
+
+i {
+    font-size: 40px;
+}
+
+
+ul > li a {
+    color: white;
+}
+a {
+    color: white;
+    font-size: 30px;
+}
+
+
+.no-scroll {
+    overflow: hidden;
+}
+
+/* Шапка */
+
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.header__wrapper {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header__desc {
+    font-weight: 700;
+    font-size: 25px;
+    animation-delay: 2s;
+
+}
+
+/* Welcome */
+.welcome__wrapper {
+    padding-top: 125px; 
+    width: 339px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+.welcome__title {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 1.125;
+    color: #FFFFFF;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.opisanie__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    border-radius: 10px;
+    margin: 0 auto;
+    
+}
+
+.welcome__wrapper--opisanie {
+    background-color: #111849;
+    width: 320px;
+    border-radius: 10px;
+}
+
+.opisanie__write {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.fa-plus {
+    color: white;
+}
+
+.welcome__active.welcome__desc {
+    display: block;
+}
+
+.welcome__desc {
+    display: none;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 1;
+    color: #FFFFFF;
+    width: 309px;
+    text-align: center;
+    text-align: left;
+    padding: 10px 10px;
+    word-break: break-all;
+    transition: all 0.5s ease;
+    line-height: 1;
+}
+/* Список */
+.spisok__statia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spisok__wrapper {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.card {
+    background-color: white ;
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 7px;
+    color: black;
+    padding: 7px 7px;
+}
+
+.card__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.card__body {
+    display: none;
+    padding: 4px 6px;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+}
+
+.card__title {
+    margin-left: 20px;
+}
+
+.fa-plus-minus {
+    margin-right: 20px;
+}
+
+.card__body.active {
+    display: block;
+}
+
